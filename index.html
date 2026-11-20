@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#173d32" />
+  <meta name="description" content="Encontrá casas, apartamentos y locales en alquiler o venta en Uruguay." />
+  <title>PISO INMOBILIARIO — Encontrá tu próximo hogar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="site-header" id="top">
+      <a class="brand" href="#/" aria-label="Piso Inmobiliario, inicio">
+        <span class="brand-mark"><span>PISO</span><span>INMOBILIARIO</span></span>
+        <span class="brand-word">PISO <b>INMOBILIARIO</b></span>
+      </a>
+      <div class="header-right">
+        <span class="header-note">Tu próximo lugar empieza acá</span>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
+      </div>
+    </header>
+
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+    <nav class="menu-panel" id="menuPanel" aria-label="Navegación principal">
+      <div class="menu-top"><span>MENÚ</span><button id="menuClose" class="icon-btn" aria-label="Cerrar menú">✕</button></div>
+      <a href="#/" class="menu-link">Inicio <span>↗</span></a>
+      <a href="#/buscar" class="menu-link">Propiedades <span>↗</span></a>
+      <a href="#/" data-scroll="nosotros" class="menu-link">Sobre nosotros <span>↗</span></a>
+      <a href="#contacto" data-scroll="contacto" class="menu-link">Contacto <span>↗</span></a>
+      <div class="menu-foot"><span>INMOBILIARIA · URUGUAY</span><span>Encontrá tu lugar.</span></div>
+    </nav>
+
+    <main id="view"></main>
+
+    <a class="whatsapp-float" href="https://wa.me/59899123456?text=Hola%2C%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.05 3.2A12.7 12.7 0 0 0 5.1 22.3L3.3 28.8l6.65-1.74A12.75 12.75 0 1 0 16.05 3.2Zm0 23.1c-1.92 0-3.8-.52-5.44-1.5l-.39-.23-3.95 1.03 1.05-3.85-.25-.4a10.3 10.3 0 1 1 8.98 4.95Zm5.66-7.72c-.31-.16-1.84-.91-2.12-1.02-.29-.1-.5-.16-.72.16-.21.32-.81 1.02-.99 1.23-.18.22-.36.24-.67.08-.31-.16-1.31-.48-2.5-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.32-.02-.49.14-.65.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.11-.21.05-.4-.02-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.1 1.07-1.1 2.62s1.13 3.03 1.29 3.24c.16.21 2.22 3.4 5.38 4.77.75.32 1.34.52 1.8.66.76.24 1.45.2 2 .12.61-.09 1.84-.75 2.1-1.48.26-.72.26-1.34.18-1.47-.08-.13-.29-.21-.6-.37Z"/></svg>
+    </a>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
